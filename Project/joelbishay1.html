@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Bishay HTML</title>
+    <link rel="stylesheet" href="joelbishay.css">
+  </head>
+  <style>h1 {
+    text-align: right;
+}
+h4 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button {
+    background-color: white; /* blue */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+.button5 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid #555555;
+    border-radius: 12px;
+}
+
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+
+
+  </style>
+  <body>
+  <h1>Joel Bishay</h1>
+  <h2>Exotic Car Collection</h2>
+    <h3>These are the fastest and most incredible cars in the world</h3>
+    <body class="dark-mode">
+        
+        <center><button id="mode-switcher" class="button button5">Switch to Light Mode</button></center>
+    </body>
+<form method="get" action="joelbishay2.html">
+ <center><p><button class="button button5">Check out the top fastest fighter jets</button></center>
+</form>
+
+    <img src="bmw.jpg" alt="Lamborghini" width="1920" height="1080">
+<p>
+     BMW M3
+    </p>
+
+    <img src="huracansto.jpg" alt="Lamborghini" width="1920" height="1080">
+<p>
+         Lamborghini Huracan STO
+        </p>
+
+    <img src="aventador.jpg" alt="Lamborghini" width="1920" height="1080">
+<p>
+     Lamborghini Aventador
+    </p>
+
+<img src="ferrari.jpg" alt="ferrari" width="1920" height="1080">
+<p>
+     Ferrari 488 GTB
+    </p>
+
+<img src="bentley.jpg" alt="bentley" width="1920" height="1200">
+<p>
+     Bentley Continental GT
+    </p>
+
+<img src="buggati.jpg" alt="buggati" width="1920" height="1080">
+<p>
+     Buggati Chiron
+    </p>
+
+<img src="porche.jpg" alt="porche" width="1920" height="1080">
+<p>
+     Porsche 911 Carrera S
+    </p>
+
+<img src="mercedes.jpg" alt="mercedes" width="1920" height="1080">
+<p>
+     Mercedes G-63
+    </p>
+
+<img src="tesla.jpg" alt="tesla" width="1920" height="1080">
+<p>
+     Tesla Roadster
+    </p>
+    <div class="video-container">
+        <iframe  src="https://www.youtube.com/embed/Zkg7p5dpzK4?start=270" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+<p>
+    <center>Watch This Video of the <strong>Fastest Cars</strong> Racing to the Finish Line!
+    </p>
+    <script>
+        var modeSwitcher = document.getElementById('mode-switcher');
+        
+        modeSwitcher.addEventListener('click', function() {
+          var body = document.body;
+          
+          if (body.classList.contains('light-mode')) {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+            modeSwitcher.textContent = 'Switch to Light Mode';
+          } else {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
+            modeSwitcher.textContent = 'Switch to Dark Mode';
+          }
+        });
+      </script>
+  </body>
+</html>

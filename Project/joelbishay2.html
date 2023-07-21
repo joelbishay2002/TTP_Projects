@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Bishay HTML</title>
+    <link rel="stylesheet" href="joelbishay.css">
+  </head>
+  <style>h1 {
+    text-align: right;
+}
+h4 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button {
+    background-color: white; /* blue */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    border-radius: 12px;
+}
+
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+  </style>
+  <body>
+  <h1>Joel Bishay</h1>
+  <h2>Next Gen fighter Jets</h2>
+    <h3>These are the fastest and most insane fighter jets in the world</h3>
+    <body class="dark-mode">
+    <center><button id="mode-switcher" class="button button5">Switch to Light Mode</button></center>
+    </body>
+    <form method="get" action="joelbishay1.html">
+ <center><p><button class="button button5">Check out the top fastest cars</button></center>
+</form>
+    <img src="f35.jpg" alt="F-35" width="1920" height="1080">
+<p>
+     Lockheed Martin F-35 Lightning II
+    </p>
+<img src="f22.jpg" alt="F-22" width="1920" height="1080">
+<p>
+     Lockheed Martin F-22 Raptor
+    </p>
+<img src="euro.jpg" alt="euro" width="1920" height="1200">
+<p>
+     Eurofighter Typhoon
+    </p>
+<img src="rafale.jpg" alt="rafale" width="1920" height="1080">
+<p>
+     Dassault Rafale
+    </p>
+<img src="sukoi.jpg" alt="porche" width="1920" height="1080">
+<p>
+     Sukhoi Su-35 
+     <div class="video-container">
+        <iframe  src="https://www.youtube.com/embed/PdnIV2Oz7Vo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-sharerel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+     <center>Watch This Video of fast and amazing <strong>Fighter Jets</strong> soaring through the sky!</center>
+    </p>    
+    <script>
+        var modeSwitcher = document.getElementById('mode-switcher');
+        
+        modeSwitcher.addEventListener('click', function() {
+          var body = document.body;
+          
+          if (body.classList.contains('light-mode')) {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+            modeSwitcher.textContent = 'Switch to Light Mode';
+          } else {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
+            modeSwitcher.textContent = 'Switch to Dark Mode';
+          }
+        });
+      </script>
+  </body>
+</html>
