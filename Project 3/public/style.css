@@ -1,0 +1,138 @@
+
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 0px;
+}
+
+
+header {
+  text-align: center;
+  padding: 0px;
+  background-color: #000000;
+  color: #f30d0d;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+.dark-mode {
+  background-color: #2b2b2b;  
+  color: #ffffff;
+
+}
+
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-items: center; 
+  padding: 20px;
+  margin-top: 100px; 
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  z-index: 1; 
+}
+
+
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 200px; 
+}
+
+
+.pokemon-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 110px;  
+  max-width: 300px;
+  margin: auto;
+}
+
+
+
+.pokemon-item {
+  flex-basis: calc(33.33% - 20px);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.pokemon-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pokemon-name {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.pokemon-trainer {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #313131;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #000000;
+}
+
+/* Error page styles */
+.not-found {
+  text-align: center;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.dark-mode {
+  background-color: #2b2b2b;  
+  color: #ffffff;
+
+}
+
+@media screen and (max-width: 768px) {
+  .pokemon-item {
+    flex-basis: calc(50% - 20px);
+  }
+}
